@@ -1,0 +1,15 @@
+extension using interface /dmo/i_agencytp
+implementation in class zbp_r_agencytp unique;
+
+extend behavior for /DMO/Agency
+{
+  field ( readonly ) zzagncytypzag, zzvatzag;
+  action ( authorization : none ) zzAssignType result [1] $self;
+
+  validation zzValidateAgencyFee on save { create; field zzagfeezag; }
+
+  extend draft determine action Prepare
+  { validation zzValidateAgencyFee; }
+
+  determination zzDeterminateVAT on modify {create; field CountryCode; }
+}

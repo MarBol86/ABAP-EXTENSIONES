@@ -1,0 +1,30 @@
+@Metadata.layer: #CUSTOMER
+annotate entity /DMO/C_AgencyTP with
+{
+  @UI: { lineItem:       [ { position: 21, importance: #HIGH },
+                           { position: 10,
+                             type: #FOR_ACTION,
+                             dataAction: 'zzAssignType',
+                             label: 'Set Agency Type' } ] ,
+         fieldGroup:     [ { position: 21, qualifier: 'General_FG' } ]
+         }
+  @UI.identification: [{  position: 10,
+                             type: #FOR_ACTION,
+                             dataAction: 'zzAssignType',
+                             label: 'Set Agency Type'  }]
+  zzagncytypzag;
+  @UI: {  fieldGroup:     [ { position: 100, qualifier: 'Contact_FG' } ],
+          identification: [{  position: 100 } ] }
+  zzagfeezag;
+  @UI.hidden: true
+  @Consumption.valueHelpDefinition: [{
+                                      entity: {
+                                          name: 'I_CurrencyStdVH',
+                                          element: 'Currency'
+                                      },
+                                      useForValidation: true }]
+  zzcurrencyzag;
+  @UI: {  fieldGroup:     [ { position: 110, qualifier: 'Contact_FG' } ],
+          identification: [{  position: 110 } ] }
+  zzvatzag;
+}

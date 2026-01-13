@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZST_E_AGENCY</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>APPEND</TABCLASS>
+    <SQLTAB>/DMO/S_EXT_INCL_AGENCY</SQLTAB>
+    <DDTEXT>Extension - Agency - Structure Persistant</DDTEXT>
+    <ACTFLAG>U</ACTFLAG>
+    <MASTERLANG>E</MASTERLANG>
+    <EXCLASS>1</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>ZZAGNCYTYPZAG</FIELDNAME>
+     <ROLLNAME>ZDE_AGNCYTYP_MB</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZAGFEEZAG</FIELDNAME>
+     <ROLLNAME>ZDE_AG_FEE</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <REFTABLE>ZST_E_AGENCY</REFTABLE>
+     <REFFIELD>ZZCURRENCYZAG</REFFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZCURRENCYZAG</FIELDNAME>
+     <ROLLNAME>ZDE_AG_CURRENCY</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZVATZAG</FIELDNAME>
+     <ROLLNAME>ZDE_AG_VAT</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>
